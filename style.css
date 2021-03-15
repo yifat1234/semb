@@ -1,0 +1,69 @@
+@font-face {
+     font-family: 'ambivalenti-tzar';
+     src: url('font/ambivalenti-tzar/400/ambivalenti-tzar-aaa-400.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+
+@font-face {
+     font-family: 'ambivalenti-tzar';
+     src: url('font/ambivalenti-tzar/700/ambivalenti-tzar-aaa-700.woff') format('woff');
+     font-weight: 700;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'almoni-neue';
+     src: url('font/almoni-neue/700/almoni-neue-aaa-700.woff')format('woff');
+     font-weight: 700;
+     font-style: normal;
+ }
+
+h1 ,h2 ,h3 {
+    font-family: 'ambivalenti-tzar';
+    font-weight: 400;
+}
+
+ body {
+     background:
+     background-image: color: #fff;
+     margin: 0;
+     font-family: 'almoni-neue', sans-serif;
+     line-height: 1.5;
+     font-size: 20px;
+ }
+
+ img {
+     max-width: 100%;
+     width: auto;
+     height: auto;
+ }
+
+ h1 {
+     font-size: 6vw;
+     font-family: 'ambivalenti-tzar';
+     font-weight: 700;
+ }
+
+ h2 {
+     font-size: 40px; 
+   font-family: 'ambivalenti-tzar';
+     font-weight: 400;
+ }
+     
+.logo {
+    max-width: 200px;
+}
+
+.banner {
+    background-image:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+url(img/grapes.jpeg);
+    padding: 20px;
+     background-position: center 40%;
+     background-size: cover;
+     height: 600px;
+     text-align: center;
+     padding: 50px 0;
+    
+}
