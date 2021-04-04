@@ -21,7 +21,7 @@
 
 h1 ,h2 ,h3 {
     font-family: 'ambivalenti-tzar';
-    font-weight: 400;
+    font-weight: 500;
 }
 
  body {
@@ -37,37 +37,74 @@ h1 ,h2 ,h3 {
      max-width: 100%;
      width: auto;
      height: auto;
+    padding:10px;
+     
+    
+    
  }
 
- h1 {
-     font-size: 6vw;
-     font-family: 'ambivalenti-tzar';
-     font-weight: 700;
- }
-
- h2 {
-     font-size: 40px; 
-   font-family: 'ambivalenti-tzar';
-     font-weight: 400;
- }
      
 .logo {
     max-width: 200px;
 }
 
 .banner {
-    background-image:
-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-url(img/grapes.jpeg);
-    padding: 20px;
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+url("img/grapes.jpeg");
+   margin: auto;
      background-position: center 40%;
      background-size: cover;
      height: 600px;
      text-align: center;
      padding: 50px 0;
+    display: block;
     
 }
 
-head {
+.container {
+    max-width: 980px;
+    margin: auto;
     
+}
+
+a {
+    color: #fff;
+}
+
+.banner.container {
+    max-width: 600px;
+
+}
+
+.features {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+
+}
+
+.features img {
+    max-width: 100px;
+}
+
+.features h2:after {
+    margin: auto;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+footer a {
+  color: #fff;
 }
