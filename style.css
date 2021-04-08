@@ -1,73 +1,87 @@
 @font-face {
-     font-family: 'ambivalenti-tzar';
-     src: url('font/ambivalenti-tzar/400/ambivalenti-tzar-aaa-400.woff') format('woff');
-     font-weight: 400;
-     font-style: normal;
- }
+    font-family: 'ambivalenti-tzar';
+    src: url('font/ambivalenti-tzar/400/ambivalenti-tzar-aaa-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 @font-face {
-     font-family: 'ambivalenti-tzar';
-     src: url('font/ambivalenti-tzar/700/ambivalenti-tzar-aaa-700.woff') format('woff');
-     font-weight: 700;
-     font-style: normal;
- }
+    font-family: 'ambivalenti-tzar';
+    src: url('font/ambivalenti-tzar/700/ambivalenti-tzar-aaa-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
- @font-face {
-     font-family: 'almoni-neue';
-     src: url('font/almoni-neue/700/almoni-neue-aaa-700.woff')format('woff');
-     font-weight: 700;
-     font-style: normal;
- }
+@font-face {
+    font-family: 'almoni-neue';
+    src: url('font/almoni-neue/700/almoni-neue-aaa-700.woff')format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
-h1 ,h2 ,h3 {
+h1,
+h2,
+h3 {
     font-family: 'ambivalenti-tzar';
     font-weight: 500;
 }
 
- body {
-     background:
-     background-image: color: #fff;
-     margin: 0;
-     font-family: 'almoni-neue', sans-serif;
-     line-height: 1.5;
-     font-size: 20px;
- }
+body {
+    background:
+        background-image: color: #fff;
+    margin: 0;
+    font-family: 'almoni-neue', sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
 
- img {
-     max-width: 100%;
-     width: auto;
-     height: auto;
-    padding:10px;
-     
-    
-    
- }
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
 
-     
+
+
+}
+
+
 .logo {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .banner {
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-,url("img/grapes.jpeg");
-   margin: auto;
-     background-position: center 40%;
-     background-size: cover;
-     height: 600px;
-     text-align: center;
-     padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("img/grapes.jpeg");
+    margin: auto;
+    background-position: center 40%;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    padding: 50px 0;
     display: block;
-    
+
+}
+
+.banner h1{
+    color: #fff;
+    text-align: right;
+
+    font-size: 50px
+}
+.banner p{
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    padding-left: 420px
 }
 
 .container {
     max-width: 980px;
     margin: auto;
-    
+
 }
 
-a {
+footer a {
     color: #fff;
 }
 
@@ -88,23 +102,53 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 60px;
-
+    
+}
+.features li{
+    background-color:#401318;
 }
 
 .features img {
     max-width: 100px;
 }
 
-.features h2:after {
-    margin: auto;
+.features h3{
+    color: #fff;
 }
 
 footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
 }
+
 footer a {
-  color: #fff;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #401318;
+    margin: 0;
+    padding: 15px;
+
+    
+}
+nav a{
+    color: #fff;
+    padding: 90px;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+nav a:hover{
+    color: yellowgreen;
 }
