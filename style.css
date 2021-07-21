@@ -19,6 +19,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'almoni-neue';
+    src: url('font/almoni-neue/300/almoni-neue-aaa-300.woff')format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 h1,
 h2,
 h3 {
@@ -31,6 +39,7 @@ body {
         background-image: color: #fff;
     margin: 0;
     font-family: 'almoni-neue', sans-serif;
+    font-weight: 700;
     line-height: 1.5;
     font-size: 20px;
 }
@@ -40,9 +49,6 @@ img {
     width: auto;
     height: auto;
     padding: 10px;
-
-
-
 }
 
 
@@ -50,8 +56,8 @@ img {
     max-width: 150px;
 }
 
-.banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("img/grapes.jpeg");
+.banner { 
+     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("img/grapes.jpeg");
     margin: auto;
     background-position: center 40%;
     background-size: cover;
@@ -59,16 +65,16 @@ img {
     text-align: center;
     padding: 50px 0;
     display: block;
-
 }
 
-.banner h1{
+.banner h1 {
     color: #fff;
     text-align: right;
 
     font-size: 50px
 }
-.banner p{
+
+.banner p {
     color: #fff;
     font-size: 20px;
     text-align: right;
@@ -102,17 +108,18 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 60px;
-    
+
 }
-.features li{
-    background-color:#401318;
+
+.features li {
+    background-color: #401318;
 }
 
 .features img {
     max-width: 100px;
 }
 
-.features h3{
+.features h3 {
     color: #fff;
 }
 
@@ -131,7 +138,7 @@ header {
     text-align: center;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -139,17 +146,17 @@ nav ul{
     margin: 0;
     padding: 15px;
 
-    
+
 }
-nav a{
+
+nav a {
     color: #fff;
-    padding: 90px;
     text-decoration: none;
     transition: .3s;
 
 }
 
-nav a:hover{
+nav a:hover {
     color: yellowgreen;
 }
 
@@ -158,7 +165,9 @@ form {
     margin: auto;
     text-align: center;
 }
-input, textarea {
+
+input,
+textarea {
     font: inherit;
     color: inherit;
     display: block;
@@ -167,25 +176,69 @@ input, textarea {
     width: 100%;
     box-sizing: border-box;
 }
+
 textarea {
     height: 200px;
 }
+
 label {
     margin-bottom: 20px;
     display: block;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
     outline: 0;
-    box-shadow: inset 0 1px 5px rgba(0,0,0,0.5);
-    
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.5);
+    background: #401318;
+
 }
 
 .button {
     transition: 0.3s;
-    background: #401318;
-    color: #fff;
-    margin:25px;
+    background: none;
+    border: 2px solid #401318;
+    color: #000;
+    
 }
 
+.button:hover{
+    background: #401318;
+    color: #fff;
+}
 
+.current {
+    border-bottom: #fff 2px solid;
+}
 
+nav li{
+    margin:auto
+}
+
+.history {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-weight: 300;
+}
+
+input, textarea{
+    font: inherit;
+    color: inherit;
+    border:  2px solid #401318;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    border-radius: 2px;
+    transition: .3;
+    margin: 0;
+}
+
+.contact {
+    padding-bottom: 56px;
+}
+.contact h2{
+    text-align: center;
+    font-size: 36px;
+    color: darkred;
+    font-weight: 700;
+}
